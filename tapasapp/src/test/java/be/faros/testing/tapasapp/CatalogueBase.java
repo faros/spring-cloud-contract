@@ -1,6 +1,5 @@
 package be.faros.testing.tapasapp;
 
-import be.faros.testing.tapasapp.TapasApp;
 import be.faros.testing.tapasapp.catalogue.controller.CatalogueController;
 import be.faros.testing.tapasapp.catalogue.domain.usecases.CatalogueSearching;
 import be.faros.testing.tapasapp.catalogue.domain.usecases.dto.Tapas;
@@ -39,10 +38,7 @@ public abstract class CatalogueBase {
         /*
             TODO step8: use Mockito to return the list of tapas above when calling catalogueSearching.getAllTapas()
          */
+        Mockito.when(catalogueSearching.getAllTapas())
+                .thenReturn(tapas);
     }
-
-    /*
-        TODO step9: run the (generated) API test on producer side
-            $mvn test
-    */
 }

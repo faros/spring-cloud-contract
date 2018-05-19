@@ -1,6 +1,5 @@
 package be.faros.testing.tapasapp;
 
-import be.faros.testing.tapasapp.TapasApp;
 import be.faros.testing.tapasapp.store.controller.UserBasketManagementController;
 import be.faros.testing.tapasapp.store.domain.usecases.UserBasketManagement;
 import io.restassured.module.mockmvc.RestAssuredMockMvc;

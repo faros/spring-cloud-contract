@@ -85,5 +85,4 @@ public class TapasAppGatewayImpl implements TapasAppGateway {
     return restTemplate.exchange(BASEPATH + BASKET + "/" + basketId + "/totalCost", HttpMethod.GET, null, BigDecimal.class).getBody();
   }
 
-
 }

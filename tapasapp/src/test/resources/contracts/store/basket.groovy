@@ -1,5 +1,3 @@
-package contracts.store
-
 import org.springframework.cloud.contract.spec.Contract
 
 Contract.make{
@@ -13,7 +11,7 @@ Contract.make{
     response{
         status 200
         headers {
-            contentType applicationJson()
+            contentType(applicationJson())
         }
         body (
                 //$(anyNumber()) //doesn't match pattern "-?d*(.d+)?"

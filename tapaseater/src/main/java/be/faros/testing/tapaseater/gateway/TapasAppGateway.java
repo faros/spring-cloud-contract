@@ -9,6 +9,8 @@ public interface TapasAppGateway {
 
   List<Tapas> getAvailableTapas();
 
+  Tapas getTapasById(String tapasId);
+
   Integer createNewBasket();
 
   List<TapasOrder> retrieveListOfAllTapasOrdersInBasket(int basketId);
@@ -17,5 +19,4 @@ public interface TapasAppGateway {
 
   BigDecimal calculateCostForBasket(int basketId);
 
-  Tapas getTapasById(String tapasId);
 }

@@ -1,5 +1,3 @@
-package contracts.catalogue
-
 import org.springframework.cloud.contract.spec.Contract
 
 Contract.make{
@@ -16,9 +14,9 @@ Contract.make{
             contentType applicationJson()
         }
         body ([
-                id: 1,
-                name: "Banderillas",
-                price: 3
+                    id: 1,
+                    name: "Banderillas",
+                    price: 3
         ])
     }
 }

@@ -49,11 +49,12 @@
 
 		<!-- TODO step5: Spring Cloud Contract Stub Runner (consumer)
 				The Spring Cloud Contract Stub Runner provides functionality for automatic stub downloading from maven repository
-				groupId: org.springframework.cloud
-				artifactId: spring-cloud-starter-contract-stub-runner
-				scope: test
 		-->
-
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-contract-stub-runner</artifactId>
+			<scope>test</scope>
+		</dependency>
 	</dependencies>
 
 	<build>
